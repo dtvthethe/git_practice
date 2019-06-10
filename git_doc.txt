@@ -86,3 +86,65 @@ git push origin work1:develop
 
 
 git pull teamone master
+
+=====TEST======
+1/ mising add these files:
+	git commit --amend
+2/ show help:
+	git help
+3/ diff between working dir and stage:
+	git diff 
+4/ Khi đang ở nhánh develop, ghép nhánh br1 vào nhánh develop
+	git merge br1
+5/ show log commit:
+	git log
+6/ show log oneline:
+	git log --oneline
+7/ Nội dung của tệp stage trở về HEAD
+	git reset
+8/ Chỉ định tệp rồi hiển thị nhật ký
+	git log abc.txt
+9/ Xem sự khác biệt giữa các commit
+	git diff commit_ID_1 commit_ID_2
+10/ Xóa tệp khỏi stage
+	git rm --cached foo.txt
+11/ Tạo và chuyển đến nhánh br1
+	git checkout -b br1
+12/ Thay đổi tên tệp
+	git mv foo.txt bar.txt
+13/ Nội dung của nhánh làm việc trở về HEAD
+	git reset
+14/ Sao chép kho truy cập từ xa（git@github.com:framgia/proj.git） vào local
+	git clone git@github.com:framgia/proj.git
+15/ Commit tệp staging
+	git commit
+16/ Xem nhật ký thao tác
+	git reflog
+17/ Chuyển đến 1 nhánh khác
+	git checkout br1
+18/ Đẩy nhánh work1 của kho local vào nhánh develop của kho truy cập từ xa origin
+	git push origin work1:develop
+19/ Xem nội dung của thay đổi
+	git status
+20/ Xem sự khác biệt giữa nhánh đang làm việc và HEAD
+	git diff HEAD
+21/ Xóa tệp
+	git rm foo.txt
+22/ Chỉ staging foo.txt
+	git add foo.txt
+23/ Kiểm tra thiết lập
+	git config -l
+24/ Xem trạng thái của kho lưu trữ
+	git status
+25/ Khi đang ở nhánh work1, rebase nhánh work1 theo HEAD của nhánh develop
+	git rebase develop
+26/ Xóa nhánh work1
+	git branch -d work1
+27/ Kéo nhánh develop của kho truy cập từ xa origin về nhánh work1 của kho local origin
+	git pull origin develop:work1
+28/ Đăng ký kho truy cập từ xa
+	git remote add repo1
+29/ Xem danh sách các nhánh
+	git branch
+30/ Xem sự khác biệt giữa HEAD và stage
+	git diff --staged
