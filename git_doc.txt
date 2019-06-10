@@ -1,0 +1,88 @@
+3 trees maintained by git:
+	+ working directory (working dir)
+	+ index (stage)
+	+ HEAD (local repository "last commit")
+
+
+=======================
+diferrences git diff commands:
+git diff: stage vs working dir
+git diff --staged: HEAD vs staged
+git diff HEAD: HEAD vs working dir
+
+
+Git ignore:
+	*.a
+	!data.txt
+	/TODO -> ignore file "TODO" name 
+	build/ -> all files/folders in side 
+	doc/*.txt
+	doc/*/*.txt -> children filess /folders *.txt
+	doc/**/*.txt -> all files inside doc .*txt 
+
+
+=======================
+Short Status:
+	git status -s / --short
+
+Remove file in working dir:
+	rm <file_name>
+	git rm --cached <file_name>
+
+	=> git rm <file_name>
+
+check out a file:
+	git checkout -- <file_name>
+
+
+=======branch===========
+git branch : show all branch
+git branch -v : show all branch detail
+git branch --merged: list all branchs haven't yet merge
+git branch --no-merged: list all branchs alreally merge
+git branch -d: delete branch
+git checkout -b topic: create + switch to "topic" branch
+
+=======remote===========
+Showing Your Remotes
+$ git remote -v
+Adding Remote Repositories
+$ git remote add pb https://github.com/paulboone/ticgit
+Fetching and Pulling from Your Remotes
+$ git fetch [remote-name]
+Pushing to Your Remotes
+$ git push origin master
+Inspecting a Remote
+$ git remote show origin
+Removing and Renaming Remotes
+$ git remote rename pb paul
+
+=======tag============
+Listing Your Tags
+$ git tag
+Annotated Tags
+$ git tag -a v1.4 -m "my version 1.4"
+Lightweight Tags
+$ git tag v1.4-lw
+Tagging Later
+$ git tag -a v1.2 9fceb02
+$ git show v1.2
+Sharing Tags
+$ git push origin --tags
+Checking out Tags
+$ git checkout -b version2 v2.0.0
+
+============Aliases===========
+git config --global alias.co checklout
+git config --global alias.unstage 'reset HEAD --' 
+
+
+============Fetch===========
+git config --global alias.co checklout
+git config --global alias.unstage 'reset HEAD --' 
+
+
+git push origin work1:develop
+
+
+git pull teamone master
