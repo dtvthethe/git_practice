@@ -88,6 +88,19 @@ git push origin work1:develop
 git pull teamone master
 
 =====TEST======
+
+------------------------------------------------
+|          | working dir | staged index | HEAD |
+------------------------------------------------
+| diff     |     yes     |    yes       |      |
+------------------------------------------------
+| --staged |             |    yes       | yes  |
+------------------------------------------------
+| HEAD     |     yes     |              | yes  |
+------------------------------------------------
+	Figure 1: git diff ... 
+
+
 1/ mising add these files:
 	git commit --amend
 2/ show help:
@@ -147,4 +160,4 @@ git pull teamone master
 29/ Xem danh sách các nhánh
 	git branch
 30/ Xem sự khác biệt giữa HEAD và stage
-	git diff --staged
+	git diff --stageddd
