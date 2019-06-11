@@ -3,6 +3,13 @@
 	+ index (stage)
 	+ HEAD (local repository "last commit")
 
+========Flow GIT=======
+- xu ly conflic: 
+	1/ git rebase --continue
+	2/ git push ko dung git commit
+- chi nen co 1 commit tren 1 branch
+- su dung git reset HEAD~<so luong commit quay ve> de quay ve cac trang thai khac
+
 
 =======================
 diferrences git diff commands:
@@ -10,6 +17,10 @@ git diff: stage vs working dir
 git diff --staged: HEAD vs staged
 git diff HEAD: HEAD vs working dir
 
+=======================
+git reset HEAD~<so lan muon quay ve>: reset ve <so lan muon quay ve> ko lam mat du lieu va unstaged
+git --soft reset HEAD~<sso lan muon quay ve>: reset ve <so lan muon quay ve> nhung van luu thay doi trong staged
+git --hard reset HEAD~<so lan muon quay ve> : reset ve <so lan muon quay ve> va xoa luon file 
 
 Git ignore:
 	*.a
