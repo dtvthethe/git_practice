@@ -1,3 +1,15 @@
+merge commits to one:
+	git rebase -i HEAD~<N>
+	pick, squash: 
+	git commit --amend
+	git push origin xx -f
+
+lo tay commit
+	git reset
+	git revert <commit ID>
+	git push origin xxx -f
+	
+
 3 trees maintained by git:
 	+ working directory (working dir)
 	+ index (stage)
