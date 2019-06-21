@@ -17,8 +17,15 @@ lo tay commit
 
 ========Flow GIT=======
 - xu ly conflic: 
-	1/ git rebase --continue
-	2/ git push ko dung git commit
+	
+	1/ fetch remote vs local branch master  ==>  git fetch origin master:master
+	2/ rebase master
+	3/ loop:
+	  	3.1/ git add .
+	  	3.2/ it rebase --continue 
+	4/ git push xxx -f
+	5/ git rebase -i HEAD~2
+	6/ git push origin chapter_7 -f
 - chi nen co 1 commit tren 1 branch
 - su dung git reset HEAD~<so luong commit quay ve> de quay ve cac trang thai khac
 
