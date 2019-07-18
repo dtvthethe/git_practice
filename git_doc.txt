@@ -22,12 +22,26 @@ lo tay commit
 	2/ rebase master
 	3/ loop:
 	  	3.1/ git add .
-	  	3.2/ it rebase --continue 
+	  	3.2/ git rebase --continue 
 	4/ git push xxx -f
 	5/ git rebase -i HEAD~2
 	6/ git push origin chapter_7 -f
 - chi nen co 1 commit tren 1 branch
 - su dung git reset HEAD~<so luong commit quay ve> de quay ve cac trang thai khac
+
+===========KO REABSE DC VI CO COMMIT MERGE===============
+git branch -D develop 
+git fetch sun develop:develop 
+git rebase develop 
+git add -A
+git rebase --continue 
+Applying: Assign Trainee
+git branch 
+  assign_supervisor
+* assign_trainee
+  develop
+  show_course
+git push origin assign_trainee -f
 
 
 =======================
